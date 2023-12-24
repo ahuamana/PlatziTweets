@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,6 +95,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xdO-ue-ynQ"/>
+                    <connections>
+                        <outlet property="loginButton" destination="lzQ-Lz-zb4" id="PRr-46-7ap"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +106,7 @@
         <!--Registro-->
         <scene sceneID="A6c-MM-UiT">
             <objects>
-                <viewController id="2Aj-gs-kfq" sceneMemberID="viewController">
+                <viewController id="2Aj-gs-kfq" customClass="RegisterViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BAX-KN-vku">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,6 +162,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="12N-yn-g4x"/>
+                    <connections>
+                        <outlet property="registerButton" destination="gzx-Xw-Rco" id="Rox-c6-K91"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRh-YF-Zhe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,7 +173,7 @@
         <!--Iniciar Session-->
         <scene sceneID="f4h-SM-SUT">
             <objects>
-                <viewController id="qQk-jN-K96" sceneMemberID="viewController">
+                <viewController id="qQk-jN-K96" customClass="LoginViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oBc-tz-Zf0">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,6 +229,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Iniciar Session" id="a6s-0h-ucL"/>
+                    <connections>
+                        <outlet property="loginButton" destination="3S5-5M-aaH" id="FMi-vi-UE1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdw-a8-PMO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
